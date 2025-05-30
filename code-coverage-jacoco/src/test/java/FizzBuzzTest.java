@@ -21,4 +21,6 @@ private FizzBuzz fizzBuzz;
         assertThat(fizzBuzz.getFizzBuzzWord(3), is("Fizz"));
     }
 
+    // test
+
 }

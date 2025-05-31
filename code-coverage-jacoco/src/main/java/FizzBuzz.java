@@ -33,7 +33,7 @@ public class FizzBuzz {
 
         return (fizzBuzzWord.length() == 0) ? null : fizzBuzzWord.toString();
     }
-     public String getHizzuzzWord(int number) {
+     public String getHizzBuzzWord(int number) {
         StringBuilder fizzBuzzWord = new StringBuilder();
 
         if (number % 3 == 0) {

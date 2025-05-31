@@ -9,18 +9,66 @@ import static org.junit.Assert.assertThat;
  * @author Petri Kainulainen
  */
 public class FizzBuzzTest {
-private FizzBuzz fizzBuzz;
+
+    private FizzBuzz fizzBuzz;
 
     @Before
     public void setUp() {
         fizzBuzz = new FizzBuzz();
     }
 
+    // FizzBuzz
+
     @Test
     public void getFizzBuzzWord_NumberIsMultipleOfThree_ShouldReturnFizz() {
-        // assertThat(fizzBuzz.getFizzBuzzWord(3), is("Fizz"));
+        assertThat(fizzBuzz.getFizzBuzzWord(3), is("Fizz"));
     }
 
-    // test
+    @Test
+    public void getFizzBuzzWord_NumberIsMultipleOfFive_ShouldReturnBuzz() {
+        assertThat(fizzBuzz.getFizzBuzzWord(5), is("Buzz"));
+    }
+
+    @Test
+    public void getFizzBuzzWord_NumberIsMultipleOfThreeAndFive_ShouldReturnFizzBuzz() {
+        assertThat(fizzBuzz.getFizzBuzzWord(15), is("FizzBuzz"));
+    }
+
+    @Test
+    public void getFizzBuzzWord_NumberIsNotMultipleOfThreeOrFive_ShouldReturnNull() {
+        assertNull(fizzBuzz.getFizzBuzzWord(4));
+    }
+
+
+
+    // 
+
+
+@Test
+    public void getGizzBuzzWord_NumberIsMultipleOfThree_ShouldReturnFizz() {
+        assertThat(fizzBuzz.getFizzBuzzWord(3), is("Fizz"));
+    }
+
+    @Test
+    public void getGizzBuzzWord_NumberIsMultipleOfFive_ShouldReturnBuzz() {
+        assertThat(fizzBuzz.getFizzBuzzWord(5), is("Buzz"));
+    }
+
+    @Test
+    public void getGizzBuzzWord_NumberIsMultipleOfThreeAndFive_ShouldReturnFizzBuzz() {
+        assertThat(fizzBuzz.getFizzBuzzWord(15), is("FizzBuzz"));
+    }
+
+    @Test
+    public void getGizzBuzzWord_NumberIsNotMultipleOfThreeOrFive_ShouldReturnNull() {
+        assertNull(fizzBuzz.getFizzBuzzWord(4));
+    }
+
+    // 
+
+
+
+
+    
 
 }

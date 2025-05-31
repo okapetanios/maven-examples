@@ -20,7 +20,7 @@ public class FizzBuzz {
     }
 
     //  NEW LINES TO TRIGGER SONAR CLOUD ANALYSIS - MUST BE GREATER THAN 20 LINES OF NEW CODE
-     public String getizzBuzzWord(int number) {
+     public String getGizzBuzzWord(int number) {
         StringBuilder fizzBuzzWord = new StringBuilder();
 
         if (number % 3 == 0) {
@@ -33,7 +33,7 @@ public class FizzBuzz {
 
         return (fizzBuzzWord.length() == 0) ? null : fizzBuzzWord.toString();
     }
-     public String getFizzuzzWord(int number) {
+     public String getHizzuzzWord(int number) {
         StringBuilder fizzBuzzWord = new StringBuilder();
 
         if (number % 3 == 0) {

@@ -44,24 +44,45 @@ public class FizzBuzzTest {
     // 
 
 
-@Test
+    @Test
     public void getGizzBuzzWord_NumberIsMultipleOfThree_ShouldReturnFizz() {
-        assertThat(fizzBuzz.getFizzBuzzWord(3), is("Fizz"));
+        assertThat(fizzBuzz.getGizzBuzzWord(3), is("Fizz"));
     }
 
     @Test
     public void getGizzBuzzWord_NumberIsMultipleOfFive_ShouldReturnBuzz() {
-        assertThat(fizzBuzz.getFizzBuzzWord(5), is("Buzz"));
+        assertThat(fizzBuzz.getGizzBuzzWord(5), is("Buzz"));
     }
 
     @Test
     public void getGizzBuzzWord_NumberIsMultipleOfThreeAndFive_ShouldReturnFizzBuzz() {
-        assertThat(fizzBuzz.getFizzBuzzWord(15), is("FizzBuzz"));
+        assertThat(fizzBuzz.getGizzBuzzWord(15), is("FizzBuzz"));
     }
 
     @Test
     public void getGizzBuzzWord_NumberIsNotMultipleOfThreeOrFive_ShouldReturnNull() {
-        assertNull(fizzBuzz.getFizzBuzzWord(4));
+        assertNull(fizzBuzz.getGizzBuzzWord(4));
+    }
+
+    // 
+    @Test
+    public void getHizzBuzzWord_NumberIsMultipleOfThree_ShouldReturnFizz() {
+        assertThat(fizzBuzz.getHizzBuzzWord(3), is("Fizz"));
+    }
+
+    @Test
+    public void getHizzBuzzWord_NumberIsMultipleOfFive_ShouldReturnBuzz() {
+        assertThat(fizzBuzz.getHizzBuzzWord(5), is("Buzz"));
+    }
+
+    @Test
+    public void getHizzBuzzWord_NumberIsMultipleOfThreeAndFive_ShouldReturnFizzBuzz() {
+        assertThat(fizzBuzz.getHizzBuzzWord(15), is("FizzBuzz"));
+    }
+
+    @Test
+    public void getHizzBuzzWord_NumberIsNotMultipleOfThreeOrFive_ShouldReturnNull() {
+        assertNull(fizzBuzz.getHizzBuzzWord(4));
     }
 
     // 
